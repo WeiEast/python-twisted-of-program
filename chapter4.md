@@ -26,6 +26,6 @@ runInteraction(interaction, *args, **kw)与数据库交互，interaction是一�
 runQuery(*args, **kw)执行sql语句，并返回result
 runOperation(*args, **lw) 执行sql语句，并返回None
 close, 关闭当前连接池
-finalClose
+finalClose。 应该被服务器关闭的触发器调用
 connect	
 disconnect
