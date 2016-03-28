@@ -38,5 +38,8 @@
     ```
     reactor.callLater(3, hello)#reactor启动3s后，执行hello
     ```
-8.connectTCP
-9.listenTCP
+8.connectTCP(port, factory, backlog=50, interface)
+  这个函数就是用来连接factory的。
+
+9.listenTCP(host,port,factory,timeout=30,bindAddress)
+  连接TCP client的
