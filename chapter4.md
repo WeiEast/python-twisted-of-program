@@ -21,7 +21,7 @@ reconnect用于重连。
 ####3.ConnectionPool
 这个是最常用的，包含以下几个函数。
 start， 开启当前连接池
-runWithConnection
+runWithConnection(func, *args, **kw)使用当前的连接执行一个函数
 runInteraction
 runQuery
 runOperation
