@@ -25,7 +25,7 @@ runWithConnection(func, *args, **kw)使用当前的连接执行一个函数,并�
 runInteraction(interaction, *args, **kw)与数据库交互，interaction是一个事务对象
 runQuery(*args, **kw)执行sql语句，并返回result
 runOperation(*args, **lw) 执行sql语句，并返回None
-close
+close, 关闭当前连接池
 finalClose
 connect	
 disconnect
