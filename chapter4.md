@@ -30,4 +30,34 @@ finalClose。 应该被服务器关闭的触发器调用
 connect	返回的是数据库连接对象。
 disconnect(conn) 关闭连接池中的某个连接
 
+我是例子：
+```
+class ReconnectingConnectionPool(adbapi.ConnectionPool):
+    def _runInteraction(self, interaction, *args, **kw):
+        conn = self.connectionFactory(self)
+        trans = self.transactionFactory(self, conn)
 
+        try:
+            result = interaction(trans, *args, **kw)
+            trans.close()
+            conn.commit()
+            return result
+        except MySQLdb.OperationalError, e:
+            if e[0] in (2006, 2013):
+                log.info("RCP: got error %s, retrying operation" %(e))
+                conn = self.connections.get(self.threadID())
+                self.disconnect(conn)
+                return self._runInteraction(interaction, *args, **kw)
+            else:
+                #traceback.print_exc()
+                excType, excValue, excTraceback = sys.exc_info()
+                try:
+                    conn.rollback()
+                except Exception, e:
+                    log.exception("Roll failed.")
+
+                raise excType, excValue, excTraceback
+        except:
+            #traceback.print_exc()
+            excType, excValue, excTraceback = sys.exc_info()
+            raise excType, excValue, excTraceback```
