@@ -29,3 +29,5 @@ close, 关闭当前连接池
 finalClose。 应该被服务器关闭的触发器调用
 connect	返回的是数据库连接对象。
 disconnect(conn) 关闭连接池中的某个连接
+
+
