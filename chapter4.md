@@ -23,7 +23,7 @@ reconnect用于重连。
 start， 开启当前连接池
 runWithConnection(func, *args, **kw)使用当前的连接执行一个函数,并且返回result
 runInteraction(interaction, *args, **kw)与数据库交互，interaction是一个事务对象
-runQuery
+runQuery(*args, **kw)执行sql语句
 runOperation
 close
 finalClose
