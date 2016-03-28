@@ -27,5 +27,5 @@ runQuery(*args, **kw)执行sql语句，并返回result
 runOperation(*args, **lw) 执行sql语句，并返回None
 close, 关闭当前连接池
 finalClose。 应该被服务器关闭的触发器调用
-connect	
-disconnect
+connect	返回的是数据库连接对象。
+disconnect(conn) 关闭连接池中的某个连接
