@@ -12,3 +12,20 @@ rollback用于回滚。
 reconnect用于重连。
 
 三个函数都没有参数，可以直接调用。
+
+####2.Transaction
+也有三个函数，close, reopen, reconnect.即关闭，重打开，重新连接
+
+
+
+####3.ConnectionPool
+这个是最常用的，包含以下几个函数。
+start， 开启当前连接池
+runWithConnection
+runInteraction
+runQuery
+runOperation
+close
+finalClose
+connect	
+disconnect
