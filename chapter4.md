@@ -64,6 +64,8 @@ class ReconnectingConnectionPool(adbapi.ConnectionPool):
 
 这个类返回的是连接池对象，实例化以后，就可以直接使用这个对象
 比如
+```
 dbpool = ReconnectingConnectionPool('MySQLdb', **config)
 dbpool.runQuery(sql)
+```
 可以自己封装一个class, 用来包装一些常用的db操作
