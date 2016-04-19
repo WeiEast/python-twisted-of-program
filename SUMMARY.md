@@ -19,6 +19,6 @@
    * [adbapi](enterprise/chapter4.md)
 * [manhole](manhole/chapter5.md)
 * plugins
-* [让我们实战吧](chapter6.md)
+* protocols
    * [example_1](chapter6-1.md)
 
