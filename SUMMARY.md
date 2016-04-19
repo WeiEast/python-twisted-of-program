@@ -1,4 +1,4 @@
-﻿# Summary
+# Summary
 
 * [Introduction](README.md)
 * [What' the twisted?](chapter1.md)
@@ -23,5 +23,5 @@
 * python
 * web
 * 让我们实战吧
-* 与stackless的点点滴滴
+* 与stackless的千丝万缕
 
