@@ -19,7 +19,7 @@
    * [adbapi](enterprise/chapter4.md)
 * [manhole](manhole/chapter5.md)
 * plugins(plugins/chapter6.md)
-* protocols
+* protocols(protocols/chapter7.md)
 * python
 * web
 * 让我们实战吧
