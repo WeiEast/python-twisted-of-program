@@ -22,6 +22,6 @@
 * protocols(protocols/chapter7.md)
 * python(python/chapter8.md)
 * web(web/chapter9.md)
-* 让我们实战吧
+* 让我们实战吧(myapp/chapter10.md)
 * 与stackless的千丝万缕
 
