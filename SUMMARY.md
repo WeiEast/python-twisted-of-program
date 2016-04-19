@@ -20,5 +20,8 @@
 * [manhole](manhole/chapter5.md)
 * plugins
 * protocols
-   * [example_1](chapter6-1.md)
+* python
+* web
+* 让我们实战吧
+* 与stackless的点点滴滴
 
