@@ -17,13 +17,8 @@
    * [threads](internet/chapter3-6.md)
 * [enterprise](enterprise/chapter4.md)
    * [adbapi](enterprise/chapter4.md)
-* [解读Tornado](manhole/chapter5.md)
-   * [epoll](manhole/chapter5-1.md)
-   * [epoll的CPU和内存消耗](manhole/chapter5-2.md)
-   * [tornado在TCP层里的工作](manhole/chapter5-3.md)
-   * [tornado TCPServer的设计解读](manhole/chapter5-4.md)
-   * [ioloop分析](manhole/chapter5-5.md)
-   * [iostream一些小细节](manhole/chapter5-6.md)
+* [manhole](manhole/chapter5.md)
+* plugins
 * [让我们实战吧](chapter6.md)
    * [example_1](chapter6-1.md)
 
