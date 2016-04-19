@@ -18,7 +18,7 @@
 * [enterprise](enterprise/chapter4.md)
    * [adbapi](enterprise/chapter4.md)
 * [manhole](manhole/chapter5.md)
-* plugins
+* plugins(plugins/chapter6.md)
 * protocols
 * python
 * web
